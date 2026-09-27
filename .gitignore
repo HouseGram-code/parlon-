@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+.vercel
+.env
+.env.local
+.env.production
+*.egg-info
+__pycache__
+*.tsbuildinfo
+!.env.example

@@ -7,6 +7,9 @@ import { Apps } from './pages/Apps'
 import { AppDetail } from './pages/AppDetail'
 import { Authorize } from './pages/Authorize'
 import { Docs } from './pages/Docs'
+import { DiscordIcon } from './DiscordIcon'
+
+const DISCORD_COMMUNITY_URL = 'https://discord.gg/mZVYwDfCWh'
 
 export default function App() {
   const [session, setSession] = useState<Session | null>(null)
@@ -40,6 +43,9 @@ export default function App() {
           </span>
           <span className="dp-topbar-badge">api beta 0.1</span>
           <div className="dp-topbar-spacer" />
+          <a className="dp-discord-link" href={DISCORD_COMMUNITY_URL} target="_blank" rel="noreferrer" title="Наше сообщество в Discord">
+            <DiscordIcon />
+          </a>
           {session ? (
             <button className="dp-link" onClick={() => navigate('/apps')}>
               Приложения
@@ -86,6 +92,9 @@ export default function App() {
         </span>
         <span className="dp-topbar-badge">api beta 0.1</span>
         <div className="dp-topbar-spacer" />
+        <a className="dp-discord-link" href={DISCORD_COMMUNITY_URL} target="_blank" rel="noreferrer" title="Наше сообщество в Discord">
+          <DiscordIcon />
+        </a>
         <button className="dp-link" onClick={() => navigate('/docs')}>
           Документация
         </button>

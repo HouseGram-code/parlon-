@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import { supabase } from '../supabaseClient'
+import { DiscordIcon } from '../DiscordIcon'
+
+const DISCORD_COMMUNITY_URL = 'https://discord.gg/mZVYwDfCWh'
 
 export function Login({ onNavigateHome, onNavigateDocs }: { onNavigateHome: () => void; onNavigateDocs: () => void }) {
   const [mode, setMode] = useState<'signin' | 'signup'>('signin')
@@ -80,6 +83,9 @@ export function Login({ onNavigateHome, onNavigateDocs }: { onNavigateHome: () =
             Читать документацию без входа →
           </button>
         </div>
+        <a className="dp-discord-link dp-discord-link-standalone" href={DISCORD_COMMUNITY_URL} target="_blank" rel="noreferrer">
+          <DiscordIcon size={16} /> Наше сообщество в Discord
+        </a>
       </div>
     </div>
   )

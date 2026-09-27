@@ -81,3 +81,7 @@ code { font-family: 'Consolas', monospace; background: #2b2d31; padding: 2px 6px
 .dp-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 10px 0; }
 .dp-table th, .dp-table td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #3f4147; vertical-align: top; }
 .dp-table th { color: #b5bac1; font-weight: 600; font-size: 12px; text-transform: uppercase; }
+
+.dp-discord-link { color: #5865f2; display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 6px; }
+.dp-discord-link:hover { background: #5865f2; color: #fff; }
+.dp-discord-link-standalone { width: auto; height: auto; padding: 6px 4px; gap: 6px; font-size: 13px; margin-top: 6px; }

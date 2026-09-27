@@ -1,5 +1,7 @@
 # Parlon Bots — api beta v0.1
 
+[![Discord](https://img.shields.io/badge/Discord-Join%20our%20community-5865F2?logo=discord&logoColor=white&style=flat-square)](https://discord.gg/mZVYwDfCWh)
+
 This repo is **only the bot platform** (Discord-style Developer Portal + REST
 API + Python SDK) for Parlon. It intentionally does **not** contain the
 Parlon messenger's own source code — that's a separate, private project.

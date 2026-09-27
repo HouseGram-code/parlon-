@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react'
+import { DiscordIcon } from '../DiscordIcon'
 
+const DISCORD_COMMUNITY_URL = 'https://discord.gg/mZVYwDfCWh'
 const SUPABASE_URL = (import.meta.env.VITE_SUPABASE_URL as string) || 'https://zhqazyivekavtsnsfwgm.supabase.co'
 const ANON_KEY = (import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string) || 'sb_publishable_ODxl_hlVpNflwdo_M0aKqw_tzIjKCZd'
 const PORTAL_URL = (import.meta.env.VITE_PORTAL_URL as string) || 'https://developer-portal-wine.vercel.app'
@@ -80,6 +82,7 @@ export function Docs() {
         <a href="#buttons">5. Кнопки (компоненты)</a>
         <a href="#invite">6. Ссылка авторизации</a>
         <a href="#limits">7. Что уже есть / что дальше</a>
+        <a href="#community">8. Сообщество</a>
       </nav>
 
       <Section id="start" title="1. Быстрый старт">
@@ -202,6 +205,15 @@ export function Docs() {
           <li>✅ Токены приложений, сброс токена, персистентный sandbox, REST API, библиотека на PyPI, кнопки, invite-ссылки.</li>
           <li>🚧 Позже: изображения/вложения в сообщениях и кнопках, вебхуки вместо опроса, слэш-команды.</li>
         </ul>
+      </Section>
+
+      <Section id="community" title="8. Сообщество">
+        <p className="dp-muted">
+          Вопросы, баги, идеи для API — заходите в наш Discord:
+        </p>
+        <a className="dp-discord-link dp-discord-link-standalone" href={DISCORD_COMMUNITY_URL} target="_blank" rel="noreferrer">
+          <DiscordIcon size={18} /> discord.gg/mZVYwDfCWh
+        </a>
       </Section>
     </div>
   )
